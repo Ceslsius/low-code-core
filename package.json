@@ -1,0 +1,55 @@
+{
+  "name": "koznak",
+  "version": "1.0.0",
+  "description": "阔子纳克公司私有前端包",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "changed": "lerna changed",
+    "build": "rimraf -rf packages/*/{lib,esm} && lerna run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@rollup/plugin-alias": "^3.1.2",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-replace": "^2.4.2",
+    "@vue/cli-plugin-babel": "^4.5.13",
+    "@vue/cli-plugin-typescript": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
+    "@vue/compiler-sfc": "^3.2.1",
+    "@vue/composition-api": "^1.1.3",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "acorn-jsx": "^5.3.2",
+    "cross-env": "^7.0.3",
+    "element-plus": "^1.0.2-beta.70",
+    "lerna": "^4.0.0",
+    "minimist": "^1.2.5",
+    "postcss": "^8.2.10",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.52.8",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.37.5",
+    "sass-loader": "^10.2.0",
+    "ts-node": "^10.2.0",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.3.5",
+    "vue": "^3.2.1"
+  },
+  "dependencies": {
+    "@koznak/form": "^1.0.1-10",
+    "@koznak/tree": "^1.0.1-63"
+  }
+}

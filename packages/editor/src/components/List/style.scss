@@ -1,0 +1,27 @@
+.kz-component-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  &-item {
+    width: 80px;
+    min-width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    margin: 15px;
+    cursor: move;
+    color: #333;
+    background-color: #fcfcfc;
+  }
+  &-item-bg {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}

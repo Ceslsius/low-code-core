@@ -1,0 +1,9 @@
+node_modules
+*.log
+docs
+doc-site
+__tests__
+.eslintrc
+jest.config.js
+vue.config.js
+tsconfig.json
